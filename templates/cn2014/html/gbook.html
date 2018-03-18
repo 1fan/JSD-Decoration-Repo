@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>{aspcms:sortname}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="{aspcms:sortkeyword}" >
+<meta name="Description" content="{aspcms:sortdesc}" >
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/common.css" rel="stylesheet">
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/nav.css" rel="stylesheet" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/pagecontent.css" rel="stylesheet" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/photoclass_cyrano.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/base.js"></script>
+<script>
+	function metmessagesubmit(){
+		if(document.myform.FaqTitle.value=="")
+		{
+			alert("标题不能为空！");
+			document.myform.FaqTitle.focus();
+			return false;
+			}
+		if(document.myform.Contact.value=="")
+		{
+			alert("姓名不能为空！");
+			document.myform.Contact.focus();
+			return false;
+			}
+		if(document.myform.verification.value=="")
+		{
+			alert("验证码不能为空！");
+			document.myform.verification.focus();
+			return false;
+			}
+		return true;
+		
+		}
+</script>
+</head>{aspcms:onlineservice}
+<body style='background:transparent url({aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/bg.gif) repeat-x scroll 50% 0%'>
+<div style='width:1002px;margin:0px auto;padding:0px;'>
+{aspcms:top}</div><div style='width:1002px;margin:0px auto;padding:0px; background:#FFF'>
+<div  style='width:1002px;background:rgb(255,255,255);  padding-top:20px; margin-top:-2px;' >
+<div style="width:191px; float:left; margin-left:30px;">{aspcms:template src=left.html}</div>
+<div  style='width:9px; float:left;margin-left:20px;'>
+<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/1351498125.png" border="0" width="100%" />
+</div>
+<div style='width:682px; float:left;  margin-left:20px;padding-bottom:20px;'>
+<div style="border:0px;background:url({aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/t.png) no-repeat;padding:0px;margin:0px;">
+<div style="padding-left:30px;">您现在的位置：当前位置：<a href="{aspcms:sitepath}/" title="首页">首页</a> {aspcms:position}&gt; [position:link]{/aspcms:position}</div></div>
+
+
+<div style='width:640px; margin-top:30px; padding-left:20px;'><form method='POST' name='myform' onSubmit='return metmessagesubmit();' action="save.asp?action=add" target='_self'>
+        <table class='message_table'>
+         <tr>
+            <td  colspan="2" ></td>
+            </tr>
+          <tr>
+            <td width="58" class='text'>标题</td>
+            <td width="452" class='input'><input name='FaqTitle' id='FaqTitle' type='text' class='input-text' />
+              <span class='info'>*</span></td>
+          </tr>
+          <tr>
+            <td class='text'>姓名</td>
+            <td class='input'><input name='Contact' id='Contact' type='text' class='input-text' />
+              <span class='info'>*</span></td>
+          </tr>
+          <tr>
+            <td class='text'>电话</td>
+            <td class='input'><input name='ContactWay' type='text' class='input-text' /></td>
+          </tr>
+          <tr>
+            <td class='text'>留言内容</td>
+            <td class='input'><textarea name='Content' cols='50' rows='6' class='textarea-text'></textarea>
+              <span class='info'>*</span></td>
+          </tr>
+            <tr>
+            <td class='text'>验证码：</td>
+            <td class='input'><input name="code" type="text" class='input-text' id="verification" size="6" maxlength="6" style="WIDTH:80px; "/>
+              <font color="#FF0000">*</font> <img src="{aspcms:sitepath}/inc/checkcode.asp" alt="看不清验证码?点击刷新!" onClick="this.src='{aspcms:sitepath}/inc/checkcode.asp'" /> </td>
+          </tr>
+            <tr>
+            <td  colspan="2" ></td>
+            </tr>
+          <tr>
+            <td class='text'></td>
+            <td >
+              <input type='submit' name='Submit' value='提交留言' class='asubmit'></td>
+          </tr>
+        </table>
+      </form></div>
+
+
+</div>
+</div>
+{aspcms:foot}
+</div>
+
+</body>
+</html>

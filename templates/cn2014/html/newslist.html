@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>{aspcms:sorttitle}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="{aspcms:sortkeyword}" >
+<meta name="Description" content="{aspcms:sortdesc}" >
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/common.css" rel="stylesheet">
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/nav.css" rel="stylesheet" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/pagecontent.css" rel="stylesheet" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/photoclass_cyrano.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/base.js"></script>
+</head>{aspcms:onlineservice}
+<body style='background:transparent url({aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/bg.gif) repeat-x scroll 50% 0%'>
+<div style='width:1002px;margin:0px auto;padding:0px;'>
+{aspcms:top}</div>
+<div style='width:1002px;margin:0px auto;padding:0px; background:#FFF'>
+<div  style='width:1002px;background:rgb(255,255,255);  padding-top:20px;margin-top:-2px;' >
+<div style="width:191px; float:left; margin-left:30px;">{aspcms:template src=left.html}</div>
+<div  style='width:9px; float:left;margin-left:20px;'>
+<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/1351498125.png" border="0" width="100%" />
+</div>
+<div style='width:682px; float:left;  margin-left:20px; padding-bottom:20px;'>
+<div style="border:0px;background:url({aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/t.png) no-repeat;padding:0px;margin:0px;">
+<div style="padding-left:30px;">您现在的位置：当前位置：<a href="{aspcms:sitepath}/" title="首页">首页</a> {aspcms:position}&gt; [position:link]{/aspcms:position}</div></div>
+<div style='width:640px; margin-top:20px; overflow:visible; height:auto'>
+<ul>
+  {aspcms:list size=10 order=order}
+  <li style="height:35px; line-height:35px; padding-left:10px; border-bottom:#ccc 1px dotted;"><span style="float:right;">[list:date style=yy-m-d]</span><a href='[list:link]' title='[list:title]' target='_self'>[list:title]</a></li>
+      {/aspcms:list}</ul>
+</div>
+<div style="widows:640px; text-align:center; height:30px; line-height:30px; margin-top:20px; letter-spacing:5px;">[list:pagenumber size=5]</div>
+</div>
+</div>
+{aspcms:foot}
+</div>
+
+</body>
+</html>

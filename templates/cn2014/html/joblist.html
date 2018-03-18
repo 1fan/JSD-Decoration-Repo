@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312" />
+<title>{aspcms:sorttitle}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="{aspcms:sortkeyword}" >
+<meta name="Description" content="{aspcms:sortdesc}" >
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/public/ui/met/css/metinfo_ui.css" id="metuimodule" data-module ="10001" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/templates/met091/images/css/metinfo.css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/public/js/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/public/js/sub.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/public/js/kefu.css" rel="stylesheet" media="screen" type="text/css" />
+<link type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/front.css" rel="stylesheet" />
+<script src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/public/js/jQuery1.7.2.js" type="text/javascript"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/public/js/ADS-final-verbose.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/productlist_roll.js"></script>
+<!--[if IE]>
+<script src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/public/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>{aspcms:onlineservice}
+<body>
+{aspcms:top}
+
+<div class="sidebar inner">
+  {aspcms:template src=left.html}
+  <div class="sb_box br-bg" style="min-height:260px;">
+    <h3 class="title">
+      <div class="position">当前位置：<a href="/" title="首页">首页</a> {aspcms:position}&gt; [position:link]{/aspcms:position}</div>
+      <span>{aspcms:sortname}</span> </h3>
+    <div class="clear"></div>
+    <div class="active" id="newslist">
+      <ul class='list-none metlist'>
+      {aspcms:list size=15 order=order}
+        <li class='list top' style="border-bottom: #CCC 1px dotted"><span>[list:date style=yy-m-d]</span><a href='[list:link]' title='[list:title]' target='_self'>[list:title]</a>
+          <p>[list:desc len=50]</p>
+        </li>
+      {/aspcms:list}
+      </ul>
+      <div id="flip" style="margin-top:10px;">
+        <div class='digg4 metpager_8' style="letter-spacing:5px;">[list:pagenumber size=5]</div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+{aspcms:foot}
+<script src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/templates/met091/images/js/fun.inc.js" type="text/javascript"></script>
+</body>
+</html>

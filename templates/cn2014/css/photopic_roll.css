@@ -1,0 +1,123 @@
+.photox a:link {
+	color: #432121;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.photox a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+.photox a:hover {
+	color: #666666;
+}
+
+.photox a:active {
+    color: #666666;
+	text-decoration: none;
+}
+
+.photox {
+	visibility:visible;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.rollphotos {
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	width:100%;
+}
+
+
+.blkphotox {
+	border:0px; 
+	padding:0px;
+	
+	position: relative;
+}
+
+.blkphotox .LeftButton {
+	background: url(roll.png) no-repeat 0px 0px;
+	left:0px;
+	float:left;
+	width:12px;
+	cursor: pointer;
+	position: absolute;
+	height:115px;
+	top:0px;
+}
+
+.blkphotox .RightButton {
+	background: url(roll.png) no-repeat -12px 0px;
+	right:1px;
+	float:right;
+	width:12px;
+	cursor: pointer;
+	position: absolute;
+	height:115px;
+	top:0px;
+}
+
+.blkphotox .Cont {
+	padding:0px 0px 0px 21px;
+	margin:0px;
+	text-align:center;
+	overflow: hidden;
+}
+
+.blkphotox .box {
+	float:left;
+	text-align:left;
+	margin:0px;
+	padding:0px;
+	width:174px;
+}
+
+.box .fang{
+	padding:0px;
+	margin:0px;
+}
+
+.box .picFit{
+	overflow:hidden;
+}
+
+.blkphotox .box img {
+}
+
+div.box div.title{
+text-align:center;
+overflow: hidden;
+white-space:nowrap;
+width:160px;
+}
+
+div.title a:link,div.title a:visited,div.title a:active{
+color:#4b4b4b;
+font:12px/35px SimSun,Arial,Sans-Serif;
+text-decoration: none;
+}
+
+div.title a:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/35px SimSun,Arial,Sans-Serif;
+}
+
+.product_scroll{ margin-top:20px; border:1px solid #DEDEDE; padding:10px 20px 0 20px; position:relative;}
+.product_scroll_inner{ height:113px; overflow:hidden;}
+.product_scroll ul{ width:140px; float:left; padding:0 9px; overflow:hidden; }
+.product_scroll li img{ width:134px; height:80px; padding:2px; border:1px solid #E8E8E8; overflow:hidden;}
+.product_scroll li.text{ height:26px; line-height:26px; overflow:hidden; white-space:nowrap; background:url(images/tbg.jpg) repeat-x 0 0; text-align:center; margin-top:1px;}
+.product_scroll .btn_l, .product_scroll .btn_r{ display:block; width:12px; height:55px; background:url(images/roll.png) no-repeat 0 0; position:absolute; top:35px; cursor:pointer;}
+.product_scroll .btn_l{ left:0;}
+.product_scroll .btn_r{ background:url(images/roll.png) no-repeat right 0; right:0;}
+.product_scroll li a{ line-height:22px;}

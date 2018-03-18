@@ -1,0 +1,47 @@
+.qq ul { margin:0; padding:0; list-style:none;}
+.qq ul li { margin:0; padding:0; list-style:none;}
+.float-right-contact-mini {
+	right: 10px; POSITION: absolute; TOP: 200px
+}
+.float-right-contact-mini A {
+	HEIGHT: 65px; BACKGROUND: url(..\images\sprites.png) no-repeat 0px 0px; COLOR: #ffffff !important; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 46px; PADDING-LEFT: 5px; TEXT-DECORATION: none !important; DISPLAY: block; LINE-HEIGHT: 110%; PADDING-RIGHT: 5px; WIDTH: 18px
+}
+.float-right-contact {
+	right: 10px; POSITION: absolute; DISPLAY: none; TOP: 200px; WIDTH: 102px
+}
+.float-right-contact .close {
+	HEIGHT: 31px; BACKGROUND: url(..\images\sprites.png) no-repeat -29px 0px; COLOR: #ffffff !important; PADDING-LEFT: 22px; TEXT-DECORATION: none !important; DISPLAY: block; LINE-HEIGHT: 31px
+}
+.float-right-contact .container {
+	BORDER-TOP: #e3e3e3 0px solid; BORDER-RIGHT: #e3e3e3 1px solid; BACKGROUND: url(..\images\shadow-1.png) #ffffff repeat-x 0px 1px; BORDER-BOTTOM: #e3e3e3 0px solid; PADDING-BOTTOM: 1px; TEXT-ALIGN: center; PADDING-TOP: 1px; PADDING-LEFT: 0px; BORDER-LEFT: #e3e3e3 1px solid; PADDING-RIGHT: 0px
+}
+.float-right-contact .container {
+	BORDER-TOP-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-BOTTOM-STYLE: solid; TEXT-ALIGN: center; BORDER-RIGHT-STYLE: solid
+}
+.float-right-contact .qq {
+	PADDING-BOTTOM: 6px; PADDING-TOP: 7px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.float-right-contact .qqtitle {
+	LINE-HEIGHT: 200%
+}
+.float-right-contact .qq .btn {
+	PADDING-TOP: 4px
+}
+.float-right-contact .qq .btn LI {
+	PADDING-BOTTOM: 5px
+}
+.float-right-contact .qq .btn A {
+	HEIGHT: 23px; BACKGROUND: url(..\images\sprites.png) no-repeat -43px -80px; COLOR: #1a649d; PADDING-LEFT: 23px; MARGIN: 0px auto; DISPLAY: block; LINE-HEIGHT: 23px; WIDTH: 53px;font-size:12px;
+}
+.float-right-contact .qqtel {
+	BACKGROUND: url(..\images\shadow-2.png) repeat-x 0px 100%; PADDING-BOTTOM: 14px
+}
+.float-right-contact .qqtel .qqcontent {
+	FONT-SIZE: 13px; FONT-WEIGHT: bold; COLOR: #ff6600; LETTER-SPACING: 0px; LINE-HEIGHT: 130%
+}
+.float-right-contact .myqqlink {
+	HEIGHT: 40px; BACKGROUND: url(..\images\bg-x.png) #fa8400 repeat-x 0px -320px; BORDER-BOTTOM: #e3e3e3 1px solid; COLOR: #ffffff !important; TEXT-ALIGN: center; TEXT-DECORATION: none !important; DISPLAY: block; LINE-HEIGHT: 40px
+}
+H3.qqtitle {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
